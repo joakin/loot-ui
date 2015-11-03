@@ -445,7 +445,7 @@ img { max-width: 100%; height: auto; }
   font-style: italic;
   color: lightgray;
 }
-body>table {
+body>table, body>section>table {
   max-width: 100%;
   overflow-x: auto;
   display: block;
@@ -453,7 +453,7 @@ body>table {
   margin-right: auto;
   width: auto !important;
 }
-body>table * {
+body>table *, body>section>table * {
   white-space: normal !important;
 }
 table th { background-color: #f8f8f8; }
