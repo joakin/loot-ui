@@ -432,6 +432,7 @@ th {
 
 body {
   padding: 20px 5%;
+  word-wrap: break-word;
 }
 
 /* Article *
