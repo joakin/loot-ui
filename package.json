@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "ecstatic": "^1.1.3",
+    "ejs": "^2.3.4",
     "routes": "^2.1.0"
   }
 }
