@@ -1,6 +1,9 @@
 var http = require('http')
 var url = require('url')
-var ecstatic = require('ecstatic')('./public')
+var ecstatic = require('ecstatic')({
+  root: './public',
+  showDir: false
+})
 
 var router = require('./lib/routes')
 var port = process.env.PORT || 7002
