@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=development nodemon index.js --watch lib/server",
     "test": "standard",
-    "compile": "NODE_ENV=production webpack -p",
+    "compile": "NODE_ENV=production webpack -p --config webpack/prod.webpack.config.js",
     "prod": "npm run compile && NODE_ENV=production node index.js"
   },
   "repository": {
