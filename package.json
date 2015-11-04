@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/joakin/loot-ui#readme",
   "devDependencies": {
+    "babel": "^6.0.15",
+    "babel-core": "^6.0.20",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
     "nodemon": "^1.8.0",
     "standard": "^5.3.1"
   },
@@ -30,5 +35,12 @@
     "ecstatic": "^1.1.3",
     "ejs": "^2.3.4",
     "routes": "^2.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
   }
 }
