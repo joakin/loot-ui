@@ -48,7 +48,6 @@
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "normalize.css": "^3.0.3",
-    "routes": "^2.1.0",
     "webpack": "^1.12.2"
   },
   "babel": {
