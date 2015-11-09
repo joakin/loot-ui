@@ -14,7 +14,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({__CLIENT__: true, __SERVER__: false}),
     new webpack.DefinePlugin({
-      'process.env': {NODE_ENV: process.env.NODE_ENV}
+      'process.env': {NODE_ENV: `"${process.env.NODE_ENV}"`}
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
