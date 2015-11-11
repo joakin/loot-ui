@@ -5,6 +5,13 @@ An experimental server that renders a UI for Wikipedia.
 ## Features
 
 * Lean and fast HTML only mode
+* Client side webapp that picks up from server side render
+* Client side routing, views and cache
+
+## Urls
+
+* `/wiki/:title` Renders a wikipedia article
+* `/wiki/:title?full` Renders a full wikipedia article (for html-only version)
 
 ## Development
 
