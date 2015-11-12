@@ -1,4 +1,3 @@
-var webpack = require('webpack')
 var conf = module.exports = require('./base.webpack.config')
 
 conf.devtool = 'inline-source-map'
