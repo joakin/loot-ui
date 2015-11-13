@@ -83,10 +83,34 @@
 
     figure[typeof*='mw:Image'] {
       display: table;
+      border-collapse: collapse;
       margin-left: 0; margin-right: 0;
       width: 100%;
       text-align: center;
       overflow: auto;
+      background-color: #f9f9f9;
+      border: 1px solid lightgray;
+      border-bottom: 0;
+
+      & figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        font-size: 0.8em;
+        text-align: left;
+        background-color: #f9f9f9;
+        border: 1px solid lightgray;
+        border-top: 0;
+      }
+
+      >* {
+        padding: 6px;
+      }
+
+      .larger-than-tablet({
+        width: auto;
+        clear: right; float: right;
+        margin: 1em 0 1em 1em;
+      });
 
       &.mw-halign-right {
         width: auto;
@@ -97,11 +121,6 @@
         width: auto;
         clear: left; float: left;
         margin: 1em 1em 1em 0;
-      }
-      & figcaption {
-        display: table-caption;
-        caption-side: bottom;
-        font-size: 0.8em;
       }
     }
   }
