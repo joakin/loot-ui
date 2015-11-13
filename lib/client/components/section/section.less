@@ -1,3 +1,5 @@
+@import '../styles/mixins.less';
+
 .Section {
   h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
@@ -28,6 +30,32 @@
       }
     }
 
+    .infobox {
+      background-color: #f9f9f9;;
+      width: auto !important;
+      max-width: 22em !important;
+      .larger-than-tablet({
+        float: right;
+        clear: right;
+        margin: 0 0 1em 1em;
+      });
+      border: 1px solid lightgray;
+
+      caption {
+        font-size: 125%;
+        font-weight: bold;
+        padding: 0.2em;
+      }
+      td, th {
+        vertical-align: top;
+        text-align: left;
+        border-top: 1px solid lightgray;
+      }
+      table tr:first-child {
+        >th, >td { border-top-width: 0; }
+      }
+    }
+
     .hatnote {
       font-size: 60%;
       font-style: italic;
@@ -40,9 +68,8 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: auto !important;
     }
-    &>table * {
+    &>table tr>td>span {
       white-space: normal !important;
     }
 
