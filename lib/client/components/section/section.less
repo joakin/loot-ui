@@ -123,5 +123,26 @@
         margin: 1em 1em 1em 0;
       }
     }
+
+    .hlist {
+      dl, ol, ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: disc;
+      }
+      dd, li {
+        &:last-child:after {
+          content: "";
+        }
+        &:after {
+          content: " · ";
+          font-weight: bold;
+        }
+      }
+      dd, dt, li {
+        margin: 0;
+        display: inline;
+      }
+    }
   }
 }
