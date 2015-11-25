@@ -1,0 +1,7 @@
+{
+  "//": "Use 2.5.2 until github.com/GitbookIO/gitbook/issues/1029 clarifed or resolved",
+  "gitbook": "2.5.2",
+  "structure": {
+    "summary": "docs/SUMMARY.md"
+  }
+}

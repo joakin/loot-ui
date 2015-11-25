@@ -19,3 +19,8 @@ Install locally [loot](https://github.com/joakin/loot).
 
 Then, after running loot and an `npm intall`, do `npm start` for starting the
 server in development and visit `localhost:7002/wiki/:title`.
+
+For generating docs:
+* `npm run docs:watch` to kick off the docs watcher.
+* `npm run docs:build` to build the docs.
+* `npm run docs:publish` to publish the docs.
