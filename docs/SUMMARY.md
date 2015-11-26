@@ -1,3 +1,3 @@
-# Table of content 
+# Table of content
 
-* [Getting Started](docs/getting-started.md)
+* [Developer information](docs/developers.md)
