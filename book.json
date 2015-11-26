@@ -3,5 +3,18 @@
   "gitbook": "2.5.2",
   "structure": {
     "summary": "docs/SUMMARY.md"
+  },
+  "plugins": [
+    "image-captions",
+    "anchors",
+    "github"
+  ],
+  "pluginsConfig": {
+    "image-captions": {
+      "caption": "_CAPTION_"
+    },
+    "github": {
+      "url": "https://github.com/joakin/loot-ui"
+    }
   }
 }
