@@ -3,7 +3,7 @@
 The project is a JavaScript based stack, both on the API server and in the UI
 server.
 
-In the [Structure of the code](docs/structure-of-the-code.md) section we will
+In the [Structure of the code](./structure-of-the-code.md) section we will
 talk more in depth about what happens where.
 
 Here you can find a list of technologies used in the project which you may find
