@@ -1,25 +1,12 @@
 @import '../styles/mixins.less';
 
 .Section {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-  }
-  h1, h2 {
-    font-family: "Linux Libertine",Georgia,Times,serif;
-    line-height: 1.3;
-  }
-  h3, h4 {
-    font-weight: bold;
-  }
-
   .Section-title {
     border-bottom: 1px solid lightgray;
   }
 
   .Section-body {
     img { max-width: 100%; height: auto; }
-
-    word-break: break-word;
 
     a {
       text-decoration: none;
@@ -57,9 +44,9 @@
     }
 
     .hatnote {
-      font-size: 60%;
+      font-size: 0.8em;
       font-style: italic;
-      color: lightgray;
+      color: #777777;
     }
 
     &>table {
