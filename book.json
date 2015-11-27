@@ -21,5 +21,8 @@
     "github": {
       "url": "https://github.com/joakin/loot-ui"
     }
+  },
+  "styles": {
+    "website": "docs/styles/website.css"
   }
 }
