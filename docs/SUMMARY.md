@@ -1,5 +1,6 @@
 # Table of content
 
+* [Features](docs/features.md)
 * [Architecture](docs/architecture.md)
 * [Developer information](docs/developers.md)
   * [Running the project](docs/running-the-project.md)
