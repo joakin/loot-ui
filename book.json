@@ -5,11 +5,16 @@
     "summary": "docs/SUMMARY.md"
   },
   "plugins": [
+    "edit-link",
     "image-captions",
     "anchors",
     "github"
   ],
   "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/joakin/loot-ui/tree/master",
+      "label": "Edit This Page"
+    },
     "image-captions": {
       "caption": "_CAPTION_"
     },
