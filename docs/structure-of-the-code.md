@@ -22,7 +22,6 @@ knowing where things are and getting started.
     * [`client`](https://github.com/joakin/loot-ui/tree/master/lib/client) → Client side web application (browser code)
       * [`index.js`](https://github.com/joakin/loot-ui/tree/master/lib/client/index.js) → Client side entry point
       * [`routes.js`](https://github.com/joakin/loot-ui/tree/master/lib/client/routes.js) → Client side routes
-      * [`configureStore.js`](https://github.com/joakin/loot-ui/tree/master/lib/client/configureStore.js) → [Redux store initialization](http://redux.js.org/docs/basics/Store.html)
       * [`actions.js`](https://github.com/joakin/loot-ui/tree/master/lib/client/actions.js) → [Action creators](http://redux.js.org/docs/basics/Actions.html)
       * [`reducers.js`](https://github.com/joakin/loot-ui/tree/master/lib/client/reducers.js) → [Reducers](http://redux.js.org/docs/basics/Reducers.html)
       * [`components`](https://github.com/joakin/loot-ui/tree/master/lib/client/components) → [UI components](https://facebook.github.io/react/docs/tutorial.html#your-first-component)
