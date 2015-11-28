@@ -3,13 +3,14 @@ var webpack = require('webpack')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: [
-    './lib/client/index'
-  ],
+  entry: {
+    bundle: './lib/client/index',
+    'service-worker': './lib/service-worker'
+  },
   output: {
     path: path.resolve('./public'),
-    filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
+    filename: '[name].js'
   },
   plugins: [
     new webpack.DefinePlugin({__CLIENT__: true, __SERVER__: false}),
