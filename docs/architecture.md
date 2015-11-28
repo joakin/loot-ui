@@ -10,7 +10,8 @@ Main objectives of the architecture are:
 * Same for the UI server, keep it standalone and focused so that it can be
   scaled as needed
 * Support HTML only experience. Wikipedia is a content site and as such content
-  should be available and usable even if other assets don't load
+  should be available and usable even if other assets, like JavaScript, don't
+  load or aren't supported
 * Enhance the client experience on slow and unreliable networks and enable
   off-line access to the content
 
