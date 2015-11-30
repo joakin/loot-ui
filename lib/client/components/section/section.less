@@ -19,10 +19,14 @@
 
     .infobox {
       background-color: #f9f9f9;;
+      // Override infobox styles that break mobile
       width: auto !important;
       max-width: 22em !important;
+      float: none !important;
       .larger-than-desktop({
-        float: right;
+        // Needs !important to override the above float: none !important on
+        // wider layouts
+        float: right !important;
         clear: right;
         margin: 0 0 1em 1em;
       });
