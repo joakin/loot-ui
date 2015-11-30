@@ -13,8 +13,8 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new webpack.DefinePlugin({__CLIENT__: true, __SERVER__: false}),
     new webpack.DefinePlugin({
+      __CLIENT__: true, __SERVER__: false,
       'process.env': {NODE_ENV: `"${process.env.NODE_ENV}"`}
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
