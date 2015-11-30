@@ -7,7 +7,7 @@ from the Wikimedia Foundation.
 
 The main objective is to get Wikipedia content to load really fast on 2G
 connections. More concretely, to
-[load Barack Obama's articlehttps: in under 15 seconds on 2G](https://www.mediawiki.org/wiki/Reading/Web/Projects/Barack_Obama_in_under_15_seconds_on_2G).
+[load Barack Obama's article: in under 15 seconds on 2G](https://www.mediawiki.org/wiki/Reading/Web/Projects/Barack_Obama_in_under_15_seconds_on_2G).
 
 For that, the approach of the research is to create a web application that will
 leverage client side caching and that will be server rendered on first load
