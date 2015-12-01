@@ -1,0 +1,36 @@
+@import "../styles/mixins.less";
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.SearchOverlayResults {
+  list-style: none;
+  margin: 0 16px;
+  padding: 0; // -webkit-padding-start is 40px by default.
+
+  .larger-than-mobile({
+    margin: 0 48px;
+    max-width: 1000px;
+  });
+
+  .larger-than-desktop({
+    margin: 0 auto;
+  });
+}
+
+.SearchOverlayResults-result {
+  border-bottom: 1px solid #eeeeee;
+  padding: 1em 2em 1em 0;
+
+  strong {
+    color: #555555;
+    margin: .5em 0;
+  }
+}
