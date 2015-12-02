@@ -40,4 +40,5 @@ The server is a progressive web application which uses as main technologies:
 * Asset compilation and bundling by [webpack](https://webpack.github.io/)
 * es2015 transpilation with [babel.js](http://babeljs.io/)
 * [less css](http://lesscss.org/) for styling
+* Service Worker for caching of assets and other requests ([progressive offline web application](https://medium.com/google-developers/instant-loading-web-apps-with-an-application-shell-architecture-7c0c2f10c73))
 
