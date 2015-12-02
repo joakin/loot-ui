@@ -8,21 +8,16 @@
   right: 0;
   background-color: #ffffff;
   opacity: 1;
+  z-index: 1;
 }
 
 .SearchOverlayResults {
   list-style: none;
-  margin: 0 16px;
-  padding: 0; // -webkit-padding-start is 40px by default.
 
-  .larger-than-mobile({
-    margin: 0 48px;
-    max-width: 1000px;
-  });
+  // -webkit-margin-{before,after} are 1em by default.
+  margin: 0;
 
-  .larger-than-desktop({
-    margin: 0 auto;
-  });
+  .content-container();
 }
 
 .SearchOverlayResults-result {

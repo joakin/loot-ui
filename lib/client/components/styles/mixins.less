@@ -19,3 +19,16 @@
 .larger-than-desktop-hd(@rules) {
   @media (min-width: 1200px) { @rules(); }
 }
+
+.content-container() {
+  padding: 0 16px;
+
+  .larger-than-tablet({
+    padding: 0 48px;
+    max-width: 1000px;
+  });
+
+  .larger-than-desktop({
+    margin: 0 auto;
+  });
+}
