@@ -45,13 +45,35 @@ If the browser client is capable enough, we'll serve the JavaScript assets that
 will allow it to become a web app, so that navigation and caching happen in the
 client and you don't have to reload the full page every time you click a link.
 
-If the browser is service-worker capable, we set the service worker that
-will intercept network requests and cache them, caching all the assets in the
-application (html chrome, CSS assets and JS app assets), meaning next time you
-visit the URL, the application will be there instantly and won't go to the
-server normally, but using an ajax request for asking the API proxy for the
-data needed (if it is not in the client cache).
+If the browser is service-worker capable, it is initialized, and it will
+intercept network requests and cache them.
 
-This will mean that from that point on you'll be able to open the site without
+More concretely:
+
+* Caching all the assets in the application (html chrome, CSS assets and JS app
+  assets), meaning next time you visit the URL, the application will be there
+  instantly and won't go to the server normally
+* Caches images in a LRU queue, so already seen images will be there the second
+  visit or with offline access
+* Requests for asking the API are cached in client database
+
+This will mean that from that point on you are able to open the site without
 internet connection and it will work.
+
+## Second (and rest of) visit(s) to the page
+
+A user in a browser visits the page again (directly or from other referrer like
+google).
+
+![Second visit flow diagram](./img/loot-ui-architecture-2.svg)
+
+The user will see immediatly the chrome of the website, and the content will
+appear either instantly if it was already on the cache, or requested to the
+API.
+
+This means the only request to the server is for the API, all the static assets
+are cached in the client, and the user gets something on the screen instantly.
+
+In the background, a check for the service worker will be made and if there is
+any difference a new version of the app will be downloaded in the background.
 
