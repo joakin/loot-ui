@@ -23,9 +23,22 @@
 .SearchOverlayResults-result {
   border-bottom: 1px solid #eeeeee;
   padding: 1em 2em 1em 0;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: #555555;
+  }
 
   strong {
-    color: #555555;
     margin: .5em 0;
+  }
+
+  .SearchOverlayResults-result-cover-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
