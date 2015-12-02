@@ -49,14 +49,29 @@ device.
 ![Client side caching means instant loading of already visited content and
 offline access to it](./img/article-client-caching.gif)
 
+---
+
+Offline access and caching of the site's shell
+
+The application is fully cached in the client when visited for the first time,
+informing the user it is ready for working offline.
+
+After that point, the website is cached, this means it will work fine without
+internet, but also that subsequent visits to the site will show the site's
+chrome instantly. The article content will be instant too if it was visited
+previously, same thing as the images (which are also cached on the client).
+
+The perception of speed is greatly improved after the first visit.
+
+![Fully cached website after first visit](./img/service-worker-caching.gif)
+
 ## Next steps
-
-There's a number of features to still be implemented.
-
-In the technical side, full caching via Service Worker.
 
 In the user facing features camp there is searching, media gallery, section
 collapsing, language selector, etc.
+
+There's also a lot to think about what to load automatically and what to load
+when the user requests it.
 
 We'll get to it step by step, ping us in the
 [issues](https://github.com/joakin/loot-ui/issues) with any comments you have.
