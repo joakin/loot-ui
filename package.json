@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development nodemon index.js --watch lib --ext js,ejs",
-    "test": "standard",
+    "lint": "standard",
+    "test:watch": "npm test -- --watch",
+    "test": "mocha --compilers js:./scripts/register-server-compilers.js lib/**/__tests__/*.js",
     "compile": "NODE_ENV=production webpack -p --config webpack/prod.webpack.config.js",
     "prod": "npm run compile && NODE_ENV=production node index.js",
     "docs:prepare": "gitbook install",
@@ -40,6 +42,7 @@
     "gitbook-cli": "^1.0.0",
     "less": "^2.5.3",
     "less-loader": "^2.2.1",
+    "mocha": "^2.3.4",
     "nodemon": "^1.8.0",
     "react-transform-hmr": "^1.0.0",
     "standard": "^5.3.1",

@@ -1,7 +1,4 @@
-require('babel-core/register')
-require.extensions['.less'] = function () { return null }
-
-global.__CLIENT__ = false
-global.__SERVER__ = true
+// Register es6 & .less handling and global variables
+require('./scripts/register-server-compilers')
 
 require('./lib/server/index')
