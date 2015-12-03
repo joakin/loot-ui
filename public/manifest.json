@@ -1,0 +1,12 @@
+{
+  "name": "Wikipedia",
+  "short_name": "Wikipedia",
+  "icons": [{
+    "src": "wikipedia_512.png",
+    "sizes": "512x512"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#fafafa",
+  "background_color": "#ffffff"
+}
