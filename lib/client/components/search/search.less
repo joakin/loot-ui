@@ -1,9 +1,31 @@
 .Search {
+  width: 100%;
+  position: relative;
+}
+
+.Search-input {
   border: 0;
   outline: 0;
   padding: 8px 0;
-
-  display: inline-block;
-  vertical-align: middle;
   width: auto;
+}
+
+.Search-clear {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  @size: 30px;
+  margin-top: -(@size/2);
+  width: @size;
+  height: @size;
+  background-image: url(./clear.png);
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  display: none;
+  &.is-visible {
+    display: block;
+  }
 }
