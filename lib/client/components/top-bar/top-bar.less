@@ -1,0 +1,16 @@
+@import "../styles/mixins.less";
+
+.TopBar {
+  background-color: white;
+  border-bottom: 1px solid #cccccc;
+
+  .content-container();
+  display: flex;
+  align-items: center;
+  height: 3em;
+
+  >* {
+    margin-left: 0.5em;
+    &:first-child { margin-left: 0; }
+  }
+}
