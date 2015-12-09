@@ -19,8 +19,7 @@
     z-index: 4;
     transform: translateX(0px);
 
-    &:before {
-      content: '';
+    >.MenuContainer-content-overlay {
       position: absolute;
       z-index: 99999;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -32,7 +31,7 @@
   &.is-open {
     .MenuContainer-content {
       transform: translateX(@menu-width);
-      &:before {
+      >.MenuContainer-content-overlay {
         visibility: visible;
       }
     }
