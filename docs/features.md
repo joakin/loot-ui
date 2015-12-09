@@ -61,10 +61,14 @@ The perception of speed is greatly improved after the first visit.
 
 ![Fully cached website after first visit](./img/service-worker-caching.gif)
 
+## Searching pages
+
+![Searching for pages](./img/search.gif)
+
 ## Next steps
 
-In the user facing features camp there is searching, media gallery, section
-collapsing, language selector, etc.
+In the user facing features camp there is reference tooltips, media gallery,
+section collapsing, language selector, etc.
 
 There's also a lot to think about what to load automatically and what to load
 when the user requests it.
