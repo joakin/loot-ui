@@ -37,6 +37,7 @@
     }
   }
 }
+
 .Menu {
   background-color: #444;
   color: white;
@@ -46,7 +47,7 @@
 
   width: @menu-width - @border-width;
 
-  .Menu-list {
+  .Menu-list, .Menu-footer-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -65,6 +66,17 @@
 
     .Icon {
       margin-right: 1em;
+    }
+  }
+
+  .Menu-footer-list {
+    margin-top: 1em;
+    font-size: 0.75em;
+    >li>a {
+      display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: #aaa;
     }
   }
 }
