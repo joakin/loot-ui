@@ -1,0 +1,25 @@
+@import '../styles/mixins.less';
+
+.LastModified {
+  clear: both;
+  margin-top: 1.5em;
+  padding: 5px 16px;
+  background-color: #eeeeee;
+  font-size: 0.9em;
+  color: #666666;
+  transition: background-color 0.2s ease,color 0.2s ease;
+  .truncated-text();
+
+  a {
+    text-decoration: none;
+  }
+  a,
+  a:visited {
+    color: #666666;
+  }
+
+  .username,
+  .username:visited {
+     font-weight: bold;
+  }
+}
