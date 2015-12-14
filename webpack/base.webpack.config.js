@@ -16,8 +16,9 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      __VERSION__: JSON.stringify(packageConfig.version),
-      __CLIENT__: true, __SERVER__: false,
+      'global.__VERSION__': JSON.stringify(packageConfig.version),
+      'global.__CLIENT__': true,
+      'global.__SERVER__': false,
       'process.env': {NODE_ENV: `"${process.env.NODE_ENV}"`}
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
