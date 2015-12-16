@@ -50,6 +50,7 @@
     "snazzy": "^2.0.1",
     "standard": "^5.4.1",
     "style-loader": "^0.13.0",
+    "timeago": "^0.2.0",
     "url-loader": "^0.5.7",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0"

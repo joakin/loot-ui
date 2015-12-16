@@ -1,5 +1,11 @@
 /* Mobile first queries */
 
+.truncated-text() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .larger-than-mobile(@rules) {
   @media (min-width: 400px) { @rules(); }
 }
