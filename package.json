@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development nodemon index.js --watch lib --ext js,ejs",
     "lint": "standard --verbose | snazzy",
     "test:watch": "npm test -- --watch",
-    "test": "mocha --compilers js:./scripts/register-server-compilers.js lib/**/__tests__/*.js",
+    "test": "mocha --compilers js:./scripts/register-server-compilers.js \"lib/**/__tests__/*.js\" --recursive",
     "compile": "NODE_ENV=production webpack -p --config webpack/prod.webpack.config.js",
     "prod": "npm run compile && NODE_ENV=production node index.js",
     "docs:prepare": "gitbook install",
