@@ -1,11 +1,13 @@
+@import "../../components/styles/variables.less";
+
 .url(@url) {
   background-image: url("./icons/@{url}");
 }
 
 .Icon {
   border: none;
-  width: 30px;
-  height: 30px;
+  width: @iconSize;
+  height: @iconSize;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 

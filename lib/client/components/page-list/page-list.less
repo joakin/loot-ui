@@ -1,3 +1,6 @@
+@import "../../components/styles/mixins.less";
+@import "../../components/styles/variables.less";
+
 .PageList {
   list-style: none;
   // -webkit-margin-{before,after} are 1em by default.
@@ -6,8 +9,31 @@
 
 .PageListItem {
   border-bottom: 1px solid #eeeeee;
-  padding: 1em;
+  padding: .5em 1em .5em @pageListThumbnailSize + .5em;
   position: relative;
+  min-height: @pageListThumbnailSize;
+
+  .PageList-item-thumb {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(./noimage.png);
+    background-size: auto 100%;
+    background-size: cover;
+    position: absolute;
+    width: @pageListThumbnailSize;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .PageList-item-description {
+    .truncated-text();
+    font-size: .8em;
+  }
+
+  .PageList-item-thumb-portrait {
+    background-size: 100% auto;
+  }
 
   a {
     text-decoration: none;
