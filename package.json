@@ -1,6 +1,6 @@
 {
   "name": "loot-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A server that renders an experimental UI for wikipedia.",
   "main": "index.js",
   "scripts": {
