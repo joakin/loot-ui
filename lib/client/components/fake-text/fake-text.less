@@ -1,0 +1,22 @@
+@keyframes bg-pulse {
+  0%, 70%, 100% {
+    opacity: 1;
+  } 35% {
+    opacity: 0.4;
+  }
+}
+
+.FakeTextSpan {
+  background-color: aliceblue;
+  animation: bg-pulse 1.3s infinite ease-in-out;
+
+  &.p1 { animation-delay: 0s; }
+  &.p2 { animation-delay: 0.3s; }
+  &.p3 { animation-delay: 0.1s; }
+  &.p4 { animation-delay: 0.5s; }
+  &.p5 { animation-delay: 0.2s; }
+  &.p6 { animation-delay: 0.3s; }
+  &.p7 { animation-delay: 0s; }
+  &.p8 { animation-delay: 0.4s; }
+  &.p9 { animation-delay: 0.2s; }
+}
