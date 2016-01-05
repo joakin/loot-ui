@@ -19,6 +19,7 @@ module.exports = {
       'global.__VERSION__': JSON.stringify(packageConfig.version),
       'global.__CLIENT__': true,
       'global.__SERVER__': false,
+      'global.__SW__': Boolean(process.env.SW),
       'process.env': {NODE_ENV: `"${process.env.NODE_ENV}"`}
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
