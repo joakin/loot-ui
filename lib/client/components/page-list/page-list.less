@@ -1,7 +1,11 @@
+@import '../styles/mixins.less';
+
 .PageList {
   list-style: none;
   // -webkit-margin-{before,after} are 1em by default.
   margin: 0;
+
+  .opacity-transition(pagelistitem);
 }
 
 .PageListItem {

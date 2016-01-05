@@ -38,3 +38,26 @@
     margin: 0 auto;
   });
 }
+
+.opacity-transition (@name: 'transition', @enter: 500ms, @leave: 300ms) {
+  .@{name}-appear,
+  .@{name}-enter {
+    opacity: 0.01;
+  }
+
+
+  .@{name}-appear.@{name}-appear-active,
+  .@{name}-enter.@{name}-enter-active {
+    opacity: 1;
+    transition: opacity @enter ease-in;
+  }
+
+  .@{name}-leave {
+    opacity: 1;
+  }
+
+  .@{name}-leave.@{name}-leave-active {
+    opacity: 0.01;
+    transition: opacity @leave ease-in;
+  }
+}
