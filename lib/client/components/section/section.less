@@ -2,10 +2,23 @@
 
 .Section {
   .Section-title {
-    border-bottom: 1px solid lightgray;
-  }
+    border-bottom: 1px solid #e2e3e4;
+    padding: 0.5em 0.5em 0.5em 36px;
+    position: relative;
 
+    .Section-toggle-icon {
+      position: absolute;
+      left: 8px;
+      top: 0.7em;
+      width: 16px;
+      background-size: 100%;
+    }
+  }
+  &.is-open .Section-toggle-icon { transform: scaleY(-1); }
+  &.is-open .Section-body { display: block; }
   .Section-body {
+    display: none;
+
     img { max-width: 100%; height: auto; }
 
     a {
