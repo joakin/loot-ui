@@ -12,7 +12,7 @@
     "compile": "NODE_ENV=production webpack -p --config webpack/prod.webpack.config.js",
     "prod": "npm run compile && NODE_ENV=production node index.js",
     "docs:build": "mkdir -p _docs && cp -R README.md docs/index.md && markdown-folder-to-html",
-    "docs:publish": "rm -rf _docs && npm run docs:build && cd _docs && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:joakin/loot-ui gh-pages --force"
+    "docs:publish": "npm run docs:build && gh-pages -d _docs"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "css-loader": "^0.23.0",
     "extract-text-webpack-plugin": "^0.9.0",
     "file-loader": "^0.8.5",
+    "gh-pages": "^0.11.0",
     "jsdom": "^7.2.1",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
