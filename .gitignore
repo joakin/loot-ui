@@ -36,4 +36,4 @@ node_modules
 public/
 
 # Transient builds
-_book
+_docs

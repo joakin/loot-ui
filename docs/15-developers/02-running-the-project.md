@@ -22,7 +22,6 @@
 
 Inside the `loot-ui` repository:
 
-* `npm run docs:watch` to kick off the docs watcher
-  * Visit http://localhost:4000 to see the docs
-* `npm run docs:build` to build the docs in `_book`
+* `npm run docs:build` to build the docs in `_docs`
+* `open _docs/index.html`
 

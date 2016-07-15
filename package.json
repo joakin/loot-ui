@@ -11,10 +11,8 @@
     "compile:watch": "NODE_ENV=development webpack --watch --config webpack/dev.webpack.config.js",
     "compile": "NODE_ENV=production webpack -p --config webpack/prod.webpack.config.js",
     "prod": "npm run compile && NODE_ENV=production node index.js",
-    "docs:prepare": "gitbook install",
-    "docs:watch": "npm run docs:prepare && gitbook serve -d",
-    "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
-    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:joakin/loot-ui gh-pages --force"
+    "docs:build": "mkdir -p _docs && cp -R README.md docs/index.md && markdown-folder-to-html",
+    "docs:publish": "rm -rf _docs && npm run docs:build && cd _docs && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:joakin/loot-ui gh-pages --force"
   },
   "repository": {
     "type": "git",
@@ -41,10 +39,10 @@
     "css-loader": "^0.23.0",
     "extract-text-webpack-plugin": "^0.9.0",
     "file-loader": "^0.8.5",
-    "gitbook-cli": "^1.0.0",
     "jsdom": "^7.2.1",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
+    "markdown-folder-to-html": "^1.0.7",
     "mocha": "^2.3.4",
     "nodemon": "^1.8.0",
     "react-addons-test-utils": "^0.14.3",

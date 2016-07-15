@@ -2,7 +2,7 @@
 
 Here you can find a list of the implemented user facing features at the moment.
 For more information about the technical features visit next chapter
-[Architecture](./architecture.md).
+[Architecture](./10-architecture.md).
 
 ## Article Reading
 
